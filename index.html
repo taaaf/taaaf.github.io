@@ -73,10 +73,16 @@
           <p class="my-4">Lorem ipsum dolor sit amet. Est doloremque doloremque aut dicta vero
             et obcaecati rerum. Ex quae illum eos nihil similique id nesciunt voluptatem eum
             voluptas placeat et quia magni qui sint assumenda.</p>
-          <button id="download" class="btn w-download" type="button" name="button">
-            <img src="img/app-store.svg" alt=""> </button>
-          <button id="download" class="btn w-download" type="button" name="button">
-            <img src="img/app-store.svg" alt=""> </button>
+
+            <div class="d-none d-lg-block">
+              <button id="download" class="btn w-download" type="button" name="button">
+                <img src="img/app-store.svg" alt=""> </button>
+              <button id="download" class="btn w-download" type="button" name="button">
+                <img src="img/app-store.svg" alt=""> </button>
+            </div>
+
+
+
         </div>
 
         <!--    <img class="img-fluid h-phone mx-auto shadow-img2" src="img/phone.svg" alt=""> -->
@@ -92,6 +98,14 @@
 
           <iframe class="border shadow-img2 mx-5 embed-responsive-item" width="200" height="420"
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fm7kQxDXmliE4MoIeYbybq1%2FREVISIONi-IxD%3Fpage-id%3D857%253A90%26node-id%3D1702%253A2700%26viewport%3D-6102%252C484%252C0.2%26scaling%3Dscale-down-width%26starting-point-node-id%3D1702%253A3531%26hide-ui=1"></iframe>
+
+        </div>
+
+        <div class="d-block d-lg-none pt-4">
+          <button id="download" class="btn w-download" type="button" name="button">
+            <img src="img/app-store.svg" alt=""> </button>
+          <button id="download" class="btn w-download" type="button" name="button">
+            <img src="img/app-store.svg" alt=""> </button>
 
         </div>
 
@@ -356,7 +370,7 @@
 
 
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
-  <df-messenger df-cx="true" location="europe-west3" chat-title="Khelp" agent-id="48af4c11-4117-42c8-9940-fc5bf373be17" language-code="it" chat-icon="https://i.ibb.co/6WnfzL7/Group-174.png">
+  <df-messenger df-cx="true" location="europe-west3" chat-title="Khelp" agent-id="48af4c11-4117-42c8-9940-fc5bf373be17" language-code="it" chat-icon="https://i.ibb.co/6WnfzL7/Group-174.png"> <!--https://i.ibb.co/NSnYpgM/khelp.png -->
   </df-messenger>
 
 
@@ -375,7 +389,7 @@
         $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
 
         var sheet = new CSSStyleSheet;
-        sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 400px }`);
+        sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 500px }`);
         $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
 
         // MORE OF YOUR DIALOGFLOW MESSENGER CODE
@@ -393,8 +407,8 @@
           $support.toggleClass('scrolled', $(this).scrollTop() > 810);
           var $shadow = $(".shadow-support");
           $support.toggleClass('scrolled', $(this).scrollTop() > 810);
-          var $khelp = $(".text-khelp");
-          $khelp.toggleClass('scrolled', $(this).scrollTop() > 45);
+          //var $khelp = $(".text-khelp");
+          //$khelp.toggleClass('scrolled', $(this).scrollTop() > 45);
         });
       });
 
