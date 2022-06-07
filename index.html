@@ -56,7 +56,7 @@
 
   </nav>
 
-  <div class="fixed-bottom text-khelp inline-block">
+  <div class="fixed-bottom text-khelp inline-block d-none d-sm-block">
 
 
     <p class="">Apri qui</p>
@@ -352,7 +352,7 @@
   </div>
 
 
-  
+
 
 
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
@@ -363,6 +363,25 @@
 
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function() {
+
+
+      $(document).ready(function() {
+
+    // YOUR CODE (NOT RELATED TO DIALOGFLOW MESSENGER)
+
+    window.addEventListener('dfMessengerLoaded', function (event) {
+        $r1 = document.querySelector("df-messenger");
+        $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+        $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
+
+        var sheet = new CSSStyleSheet;
+        sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 600px }`);
+        $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
+
+        // MORE OF YOUR DIALOGFLOW MESSENGER CODE
+    });
+});
+
 
       $(function() {
         $(document).scroll(function() {
