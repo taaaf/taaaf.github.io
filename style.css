@@ -17,7 +17,7 @@ body {
     url(font/IvyMode-SemiBold.ttf);
 }
 
-.ivy-mode{
+.ivy-mode {
   font-family: 'IvyMode';
   font-weight: bold;
   white-space: nowrap;
@@ -27,7 +27,6 @@ h1 {
   font-family: 'IvyMode';
   font-weight: bold;
   white-space: nowrap;
-
 }
 
 h2 {
@@ -35,7 +34,6 @@ h2 {
   font-weight: bold;
   white-space: nowrap;
 }
-
 
 .container1 {
   cursor: grab;
@@ -64,10 +62,9 @@ h2 {
   color: #065A3E;
 }
 
-.article{
+.article {
   text-decoration: none;
   color: inherit;
-
 }
 
 .scroll-hide::-webkit-scrollbar {
@@ -81,7 +78,6 @@ h2 {
 .bg-nav a:hover {
   color: white;
 }
-
 
 .bg-nav.scrolled {
   background-color: white;
@@ -131,7 +127,6 @@ h2 {
   color: black;
 }
 
-
 #app {
   padding: 6em 0 3em;
 }
@@ -175,6 +170,7 @@ h2 {
   margin-bottom: 0.8em;
   margin-left: 60%;
 }
+
 /*
 .text-khelp.scrolled {
   color: black;
@@ -265,7 +261,7 @@ h2 {
   border-top-right-radius: 2em;
 }
 
-.border-event img{
+.border-event img {
   border-radius: 1em;
 }
 
@@ -273,12 +269,13 @@ h2 {
   max-width: 20em;
 }
 
-.blur{
+.blur {
   z-index: -1;
 }
-.blur img{
-  width:100%;
-  height:auto;
+
+.blur img {
+  width: 100%;
+  height: auto;
 }
 
 .reveal {
@@ -318,18 +315,41 @@ h2 {
 }
 
 .link-article {
-
-text-decoration: none;
-color: inherit;
-
+  text-decoration: none;
+  color: inherit;
 }
 
 .link-article:hover {
-
   color: #046274;
+}
+
+.text-support {
+
+  max-width: 40em;
 
 }
 
+.support {
+  background-color: #09A16E;
+  border-color: #09A16E;
+  border-radius: 3.5em;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 1.2em 1.8em;
+  text-align: center;
+}
+
+.support:hover {
+  background-color: black;
+  border-color: black;
+  border-radius: 3.5em;
+  color: #09A16E;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 1.2em 1.8em;
+  text-align: center;
+}
 
 #download:focus, #download:active {
   outline: none !important;
@@ -345,7 +365,6 @@ color: inherit;
   border-radius: 3em;
   padding: 0.4em 1.3em;
 }
-
 
 df-messenger {
   --df-messenger-bot-message: #33A7BD;
