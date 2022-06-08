@@ -17,6 +17,12 @@ body {
     url(font/IvyMode-SemiBold.ttf);
 }
 
+.ivy-mode{
+  font-family: 'IvyMode';
+  font-weight: bold;
+  white-space: nowrap;
+}
+
 h1 {
   font-family: 'IvyMode';
   font-weight: bold;
@@ -40,7 +46,7 @@ h2 {
   overflow: auto;
 }
 
-.container3 {
+.container-tre {
   cursor: grab;
   overflow: auto;
 }
@@ -56,6 +62,12 @@ h2 {
 
 .eventi-hover:hover {
   color: #065A3E;
+}
+
+.article{
+  text-decoration: none;
+  color: inherit;
+
 }
 
 .scroll-hide::-webkit-scrollbar {
@@ -217,7 +229,7 @@ h2 {
 }
 
 .h-card2 {
-  height: 32em;
+  height: 34em;
   width: 24em;
   background-color: #F3F3F3;
   min-width: 24em;
@@ -305,6 +317,20 @@ h2 {
   padding: 0.4em 1.3em;
 }
 
+.link-article {
+
+text-decoration: none;
+color: inherit;
+
+}
+
+.link-article:hover {
+
+  color: #046274;
+
+}
+
+
 #download:focus, #download:active {
   outline: none !important;
   box-shadow: none;
@@ -319,6 +345,7 @@ h2 {
   border-radius: 3em;
   padding: 0.4em 1.3em;
 }
+
 
 df-messenger {
   --df-messenger-bot-message: #33A7BD;
