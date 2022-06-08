@@ -253,13 +253,14 @@ h2 {
 }
 
 .border {
-  border-radius: 2em;
+  border-radius: 2.5em;
 }
 
 .border img {
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
 }
+
 
 .border-event img {
   border-radius: 1em;
