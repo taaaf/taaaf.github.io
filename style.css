@@ -375,3 +375,14 @@ df-messenger {
   --df-messenger-send-icon: #09A16E;
   --df-messenger-user-message: #09A16E;
 }
+
+
+
+
+/*guidelines*/
+
+.max-width-nav{
+
+  max-width: 20em;
+
+}
