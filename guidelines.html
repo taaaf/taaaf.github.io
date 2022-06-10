@@ -14,7 +14,7 @@
 
 <body class="bg-gray">
 
-  <nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-custom bg-nav">
+  <nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-custom bg-nav-guideline">
     <div class="container">
       <a href="index.html" class="navbar-brand ivy-mode">Dəəply</a>
 
@@ -27,24 +27,24 @@
       <div class="collapse navbar-collapse" id="navmenu">
 
         <ul class="navbar-nav me-auto">
-          <li class="nav-item mx-2">
+          <li class="nav-item-guideline mx-2">
             <a href="index.html#carte" class="nav-link">Gioco di carte</a>
           </li>
-          <li class="nav-item mx-2">
+          <li class="nav-item-guideline mx-2">
             <a href="index.html#eventi" class="nav-link">Eventi</a>
           </li>
-          <li class="nav-item mx-2">
+          <li class="nav-item-guideline mx-2">
             <a href="index.html#blog" class="nav-link">Blog</a>
           </li>
         </ul>
 
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item mx-2">
+          <li class="nav-item-guideline mx-2">
             <a href="#" class="nav-link">Guidelines</a>
           </li>
 
-          <li class="supportaci2 mx-2">
-            <a href="#supportaci" class="nav-link supportaci shadow-support">Supportaci</a>
+          <li class="mx-2">
+            <a href="#supportaci" class="nav-link supportaci-guideline shadow-support-guideline">Supportaci</a>
           </li>
 
         </ul>
@@ -54,31 +54,11 @@
 
   </nav>
 
-  <!--
-  <nav id="sidebarMenu" class="d-lg-block sidebar ">
-               <div class="position-fixed max-width-nav pt-5">
-                 <div class="list-group list-group-flush mx-3 mt-4">
-                   <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                     <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Guideline 1</span>
-                   </a>
-
-                   <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                     <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Guideline 2</span>
-                   </a>
-
-                   <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                     <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Guideline 3</span>
-                   </a>
-
-                 </div>
-               </div>
-             </nav> -->
-
   <div class="mt-3 pt-5 px-2 position-fixed " style="z-index:+100;">
 
 
     <button class="btn btn-primary guideline-btn d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
-      Guidelines
+      Indice
     </button>
 
     <div class="offcanvas offcanvas-start pt-5" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
@@ -100,28 +80,29 @@
 
 
   <div class="container-fluid pt-5 d-none d-lg-block">
-    <div class="row flex-nowrap position-fixed bg-white">
+    <div class="row flex-nowrap position-fixed bg-white width-nav">
       <div class="">
         <div class="d-flex flex-column px-3 pt-4 text-black">
 
-          <h5>Guidelines</h5>
+
+          <h5>Indice</h5>
 
           <ul class="nav nav-pills flex-column mb-0 align-items-center" id="menu">
 
-            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-              <i class=""></i> <span class="">Products</span> </a>
+            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link2 px-0 align-middle">
+              <i class=""></i> <span class="">Guideline 1</span> </a>
             <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
               <li class="">
-                <a href="#" class="nav-link px-0"> <span class="">Product</span> 1</a>
+                <a href="#" class="nav-link2 px-0"> <span class="">Product</span> 1</a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0"> <span class="">Product</span> 2</a>
+                <a href="#" class="nav-link2 px-0"> <span class="">Product</span> 2</a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0"> <span class="">Product</span> 3</a>
+                <a href="#" class="nav-link2 px-0"> <span class="">Product</span> 3</a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0"> <span class="">Product</span> 4</a>
+                <a href="#" class="nav-link2 px-0"> <span class="">Product</span> 4</a>
               </li>
             </ul>
             </li>
@@ -145,21 +126,25 @@
 
 
 
-      <div class="container pt-5">
+      <div class="container pt-5 mt-3">
         <div class="row">
 
-          <div class="col-2">
+          <div class="d-none d-sm-block col-2">
 
           </div>
-          <div class="d-none d-xl-block col-1">
+          <div class="d-none d-lg-block col-1">
 
           </div>
 
 
           <div class="col guideline-card">
 
+            <p class="mb-1 pt-3">Guideline 01</p>
+
             <h2 class="h2-guideline pb-2">Ricerca attentamente</h2>
-            <p class=pb-3"">Il “Coming Out” non è il punto d’arrivo ma una tappa complessa ed importante del percorso personale delle persone LGBTQIA+.
+
+            <hr>
+            <p class="pb-2 pt-4">Il “Coming Out” non è il punto d’arrivo ma una tappa complessa ed importante del percorso personale delle persone LGBTQIA+.
               Non è l’unica. Esistono altri momenti altrettanto importanti che è bene considerare nell’attivita di ricerca.
               La scoperta di sè e del rapporto con l’altro non è un percorso che si conclude. </p>
 
