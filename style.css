@@ -428,23 +428,48 @@ df-messenger {
 }
 
 .guideline-btn {
-  background-color: white;
-  color: black;
+  background-color: #046274;
+  color: white;
+  border-radius: 1em;
+  padding: 0.4em 1em;
+  font-size: 1.1em;
 }
 
 .guideline-btn:hover {
-  color: #09A16E;
+  color: #046274;
   background-color: black;
-  border-radius: 10em;
+  border-radius: 1em;
+  padding: 0.4em 1em;
+  font-size: 1.1em;
 }
+
+.guideline-btn:focus, .guideline-btn:active {
+  outline: none !important;
+  background-color: #046274;
+  color: white;
+  border-radius: 1em;
+  padding: 0.4em 1em;
+  font-size: 1.1em;
+}
+
 
 .nav-link2{
   color: black;
   text-decoration: none;
+  padding: 0.7em 0;
 }
 
 .nav-link2:hover{
   color: #09A16E;
+}
+
+.offcanvas{
+  max-width: 18em;
+}
+
+h5{
+
+  font-weight: 600;
 }
 
 
@@ -471,6 +496,11 @@ hr{
   -webkit-filter: drop-shadow(0px 0.5em 0.5em lightgray);
   filter: drop-shadow(0px 0.5em 0.5em lightgray);
   line-height: 1.3em;
+
+}
+
+.width-yesno img{
+  width: 2.3em;
 
 }
 
