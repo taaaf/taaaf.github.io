@@ -512,9 +512,9 @@ hr {
 .reveal3 {
   position: relative;
   transform: translateX(1000px);
-  transition: 3s all ease;
+  transition: 2s all ease;
 }
 
 .reveal3.active3 {
-  transform: translateX(500px);
+  transform: translateX(0px);
 }
