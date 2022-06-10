@@ -222,7 +222,6 @@ h2 {
 
 .h-card {
   max-height: 28em;
-
 }
 
 .h-card2 {
@@ -261,7 +260,6 @@ h2 {
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
 }
-
 
 .border-event img {
   border-radius: 1em;
@@ -326,9 +324,7 @@ h2 {
 }
 
 .text-support {
-
   max-width: 40em;
-
 }
 
 .support {
@@ -377,32 +373,23 @@ df-messenger {
   --df-messenger-user-message: #09A16E;
 }
 
-
-
-
 /*guidelines*/
-
 .bg-nav-guideline {
   background-color: #F3F3F3;
-
 }
 
-.nav-item-guideline a{
-  color:black;
+.nav-item-guideline a {
+  color: black;
 }
 
-
-.nav-item-guideline:hover a{
+.nav-item-guideline:hover a {
   color: #09A16E;
 }
-
 
 .shadow-support-guideline {
   -webkit-filter: drop-shadow(0px 0.5em 1em lightgray);
   filter: drop-shadow(0px 0.5em 1em lightgray);
 }
-
-
 
 .supportaci-guideline {
   color: white;
@@ -412,21 +399,18 @@ df-messenger {
   text-align: center;
 }
 
-.supportaci-guideline:hover{
+.supportaci-guideline:hover {
   color: #09A16E;
   background-color: black;
   border-radius: 10em;
   width: 8em;
   text-align: center;
-
 }
 
-.width-nav{
-
-  width:15em;
-
+.width-nav {
+  width: 15em;
+  z-index: 100;
 }
-
 
 .guideline-btn {
   outline: none !important;
@@ -438,17 +422,20 @@ df-messenger {
   font-size: 1.1em;
   -webkit-filter: drop-shadow(0px 0.3em 0.5em lightgray);
   filter: drop-shadow(0px 0.3em 0.5em lightgray);
-
 }
 
 .guideline-btn:hover {
   outline: none !important;
-box-shadow: none !important;
+  box-shadow: none !important;
   color: white;
   background-color: black;
   border-radius: 1em;
   padding: 0.4em 1em;
   font-size: 1.1em;
+}
+
+#card-guideline {
+  background-color: none;
 }
 
 .guideline-btn:focus, .guideline-btn:active {
@@ -460,67 +447,74 @@ box-shadow: none !important;
   padding: 0.4em 1em;
   font-size: 1.1em;
 }
-    button{
 
-      border-width: 0;
-    }
+button {
+  border-width: 0;
+}
 
-.nav-link2{
+.nav-link2 {
   color: black;
   text-decoration: none;
   padding: 0.7em 0;
 }
 
-.nav-link2:hover{
+.nav-link2:hover {
   color: #09A16E;
 }
 
-.offcanvas{
+.offcanvas {
   max-width: 18em;
 }
 
-h5{
-
+h5 {
   font-weight: 600;
 }
-
 
 .h2-guideline {
   font-family: 'Inter', sans-serif;
   color: black;
   letter-spacing: -0.03em;
-
 }
 
-hr{
-
+hr {
   height: 0.07em;
   color: black;
   border-color: black;
   opacity: 80%;
 }
 
-.guideline-card{
-
+.guideline-card {
   background-color: white;
   border-radius: 3em;
   padding: 3em 2em 1.5em 2em;
   -webkit-filter: drop-shadow(0px 0.5em 0.5em lightgray);
   filter: drop-shadow(0px 0.5em 0.5em lightgray);
   line-height: 1.3em;
-
 }
 
-.width-yesno img{
+.width-yesno img {
   width: 2.2em;
-
 }
 
-.card-dodont{
+.card-dodont {
   background-color: white;
   -webkit-filter: drop-shadow(0px 0.1em 0.2em lightgray);
   filter: drop-shadow(0px 0.1em 0.2em lightgray);
   border-radius: 1em;
   padding: 0.5em 0.4em;
   margin: 1.2em 0.5em;
+}
+
+.card2 img {
+  border-radius: 2em;
+}
+
+.reveal3 {
+  position: relative;
+  transform: translateX(1000px);
+  transition: 3s all ease;
+}
+
+.reveal3.active3 {
+  transform: translateX(500px);
 }

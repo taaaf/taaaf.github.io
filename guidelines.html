@@ -197,7 +197,7 @@
 
             <hr>
             <p class="pb-2 pt-4">Il “Coming Out” non è il punto d’arrivo ma una tappa complessa ed importante del percorso personale delle persone LGBTQIA+.
-              Non è l’unica. Esistono altri momenti altrettanto importanti che è bene considerare nell’attivita di ricerca.
+              Non è l’unica. Esistono altri momenti altrettanto importanti che è bene considerare nell’attività di ricerca.
               La scoperta di sè e del rapporto con l’altro non è un percorso che si conclude. </p>
 
             <div class="card-dodont row">
@@ -339,6 +339,15 @@
 
         </div>
 
+        <div class="row">
+
+          <div id="container1" class="d-flex flex-row flex-nowrap overflow-auto scroll-hide container pt-4">
+            <div id="card-guideline" class="card2 reveal3 pt-4 pb-5 px-3" style="min-width: 21em;"> <img class="h-card shadow-img img-fluid" draggable="false" src="img/guidelines/foto1.png" alt=""></div>
+            <div id="card-guideline" class="card2 reveal3 pt-4 pb-5 px-3" style="min-width: 21em;"> <img class="h-card shadow-img img-fluid" draggable="false" src="img/guidelines/foto2.png" alt=""></div>
+            <div id="card-guideline" class="card2 reveal3 pt-4 pb-5 px-3" style="min-width: 21em;"> <img class="h-card shadow-img img-fluid" draggable="false" src="img/guidelines/foto3.png" alt=""></div>
+
+          </div>
+
       </div>
 
 
@@ -349,6 +358,27 @@
 
 
 
+  <script type="text/javascript">
+
+  function reveal3() {
+    var reveals3 = document.querySelectorAll(".reveal3");
+    for (var i = 0; i < reveals3.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals3[i].getBoundingClientRect().top;
+      var elementVisible = 0;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals3[i].classList.add("active3");
+      } else {
+        reveals3[i].classList.remove("active3");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal3);
+
+  // To check the scroll position on page load
+  reveal3();
+
+  </script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
