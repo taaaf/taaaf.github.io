@@ -3,6 +3,18 @@ body {
   color: black;
 }
 
+.background-body{
+
+
+  background-image: url("img/fondale.jpg");
+
+ background-position: center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+
+}
+
 @font-face {
   font-family: IvyMode;
   src: local("Ivy Mode Bold"),
@@ -159,6 +171,7 @@ h2 {
   background-color: black;
   border-radius: 10em;
 }
+
 
 .text-khelp {
   font-family: 'IvyMode';
