@@ -4,7 +4,7 @@ body {
 }
 
 section div, a{
-  z-index: 100;
+  z-index: 1;
 }
 
 .background-body{
@@ -352,8 +352,8 @@ h2 {
   border-radius: 3.5em;
   color: white;
   text-decoration: none;
-  font-size: 1.5em;
-  padding: 1.2em 1.8em;
+  font-size: 1.2em;
+  padding: 1em 1.4em;
   text-align: center;
 }
 
@@ -363,8 +363,8 @@ h2 {
   border-radius: 3.5em;
   color: #09A16E;
   text-decoration: none;
-  font-size: 1.5em;
-  padding: 1.2em 1.8em;
+  font-size: 1.2em;
+  padding: 1em 1.4em;
   text-align: center;
 }
 
