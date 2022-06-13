@@ -13,6 +13,9 @@
 </head>
 
 <body class="background-body">
+  <!--classe per immagine di sfondo-->
+
+  <!--barra di navigazione-->
 
   <nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-custom bg-nav">
     <div class="container">
@@ -54,12 +57,14 @@
 
   </nav>
 
+
+
   <div id="div1">
-
-
+    <!--div per cambio colore nav bar-->
 
     <div class="fixed-bottom text-khelp inline-block d-none d-sm-block">
 
+      <!--bottone che permette di accedere al chatbot da screenreader all'inizio del caricamento della pagina-->
       <button id="activateKhelp" type="button" name="button" class="button-khelp">Parla con Khelp</button>
 
     </div>
@@ -75,28 +80,26 @@
             </p>
 
             <div class="d-none d-lg-block">
+              <!--bottoni sotto il prototipo se da mobile o finestra stretta, sennò a fianco-->
               <button id="download" class="btn w-download" type="button" name="button">
                 <img src="img/app-store.svg" alt="Scarica su App Store"> </button>
               <button id="download" class="btn w-download" type="button" name="button">
                 <img src="img/play-store.svg" alt="Scarica su Google Play Store"> </button>
             </div>
-
-
-
           </div>
 
-          <!--    <img class="img-fluid h-phone mx-auto shadow-img2" src="img/phone.svg" alt="">-->
+
 
           <div class="d-none d-sm-block">
             <iframe id="figma" class="border shadow-img2 mx-5 embed-responsive-item" width="300" height="630" title="Demo applicazione navigabile" src=""></iframe>
-
           </div>
 
           <div class="d-block d-sm-none">
-
+            <!--iframe per versione mobile o schermo piccolo (non sono riuscito a renderlo responsive)-->
             <iframe id="figma2" class="border shadow-img2 mx-5 embed-responsive-item" width="200" height="420" title="Demo applicazione navigabile" src=""></iframe>
-
           </div>
+
+
           <div class="d-block d-lg-none pt-4">
             <button id="download" class="btn w-download" type="button" aria-label="">
               <img src="img/app-store.svg" alt="Scarica su App Store"> </button>
@@ -105,9 +108,7 @@
 
           </div>
 
-
         </div>
-
       </div>
 
     </section>
@@ -116,6 +117,7 @@
 
 
   <div id="div2">
+    <!--div per cambio colore nav bar-->
 
 
 
@@ -126,9 +128,10 @@
         <div class="d-lg-flex pt-4 pb-4">
 
           <div class="my-auto px-4">
-            <h1 class="ivyFont  text-wrap">Scendi in profondità con le carte Deep.ly</h1>
+            <h1 class="ivyFont text-wrap">Scendi in profondità con le carte Deep.ly</h1>
 
-            <p class="pt-3">Le carte propongono un’attività ludica, sia singola che di gruppo, che ti permetterà di affrontare tematiche sensibili e profonde. Ogni giocatore verrà spronato a confidarsi e confrontarsi con lə altrə giocatorə in un ambiente che sia aperto ad accogliere l’individualità di ognunə.
+            <p class="pt-3">Le carte propongono un’attività ludica, sia singola che di gruppo, che ti permetterà di affrontare tematiche sensibili e profonde. Ogni giocatore verrà spronato a confidarsi e confrontarsi con lə altrə giocatorə in un
+              ambiente che sia aperto ad accogliere l’individualità di ognunə.
             </p>
           </div>
           <div class="container pr-5">
@@ -166,7 +169,7 @@
     </section>
 
 
-
+    <!--immagine di sfondo per estetica e basta-->
 
     <div class="position-relative">
       <div class="blur position-absolute end-0">
@@ -174,8 +177,9 @@
       </div>
     </div>
 
-
   </div>
+
+
 
   <section id="eventi" class="container2 bg-gray">
 
@@ -390,13 +394,14 @@
       <h2 class="px-4 pb-2 pt-5">Supporta il progetto</h2>
 
 
-      <p class="px-4 pb-2 pt-2 text-support"> Dəəp.ly è un progetto supportato economicamente anche grazie alle donazioni dellə nostrə utenti che ne riconoscono l’effettiva importanza per il loro vissuto. Questo ci permette di offrire un’applicazione totalmente gratuita a tuttə lə utenti e di mantenere la massima qualità del servizio. Se volessi contribuire al nostro progetto con una donazione te saremmo gratə.
+      <p class="px-4 pb-2 pt-2 text-support"> Dəəp.ly è un progetto supportato economicamente anche grazie alle donazioni dellə nostrə utenti che ne riconoscono l’effettiva importanza per il loro vissuto. Questo ci permette di offrire un’applicazione
+        totalmente gratuita a tuttə lə utenti e di mantenere la massima qualità del servizio. Se volessi contribuire al nostro progetto con una donazione te saremmo gratə.
       </p>
 
     </div>
 
 
-
+    <!--link di prova per donazioni... -->
 
     <div class="container d-flex justify-content-center py-5">
 
@@ -410,7 +415,7 @@
 
   </section>
 
-  <footer class="">
+  <footer class=""> <!-- footer vuoto per mostrare l'immagine di sfondo -->
 
     <div class="" style="height:60em;">
 
@@ -421,16 +426,13 @@
 
 
 
-
-
-
+ <!-- script chatbot -->
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
   <df-messenger df-cx="true" location="europe-west3" chat-title="Khelp" agent-id="48af4c11-4117-42c8-9940-fc5bf373be17" language-code="it" chat-icon="https://i.ibb.co/6WnfzL7/Group-174.png">
   </df-messenger>
 
-
+ <!-- link altri script -->
   <script src="scripts.js"></script>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 

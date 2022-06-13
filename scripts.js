@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+
   window.addEventListener('dfMessengerLoaded', function(event) {
     console.log("ok");
     $r1 = document.querySelector("df-messenger");
@@ -15,17 +16,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $r2.shadowRoot.adoptedStyleSheets = [sheet];
 
-      var khelp_button = document.getElementById("#widgetIcon");
+    var khelp_button = document.getElementById("#widgetIcon");
 
- jQuery("#activateKhelp").click(function() {
+    jQuery("#activateKhelp").click(function() {
       console.log("dentro " + khelp_button);
-window.alert("Dovrebbe aprire il chatbot ma non funziona :(  clicca direttamente sull'icona");
+      window.alert("Dovrebbe aprire il chatbot ma non funziona :(  clicca direttamente sull'icona");
       //mi dà valore nullo anche se il bottone ha id widgetIcon. Non so come risolvere.
       jQuery("#widgetIcon").trigger("click");
       return false;
     });
 
-      loadDeferredIframe();
+      loadDeferredIframe(); //richiama la funzione che carica il prototipo di figma dopo aver caricato il chatbot. In questo modo crea meno problemi.
 
   });
 
@@ -38,7 +39,7 @@ window.alert("Dovrebbe aprire il chatbot ma non funziona :(  clicca direttamente
 
 
 
-
+//calcolo altezza nella pagina per cambiare il colore della navbar
 
   var heightDiv1 = 0;
   var heightDiv2 = 0;
@@ -78,7 +79,7 @@ window.alert("Dovrebbe aprire il chatbot ma non funziona :(  clicca direttamente
   });
 
 
-
+//permette lo scroll anche da mouse premendo il tasto sinistro
 
   var ele = document.getElementById('container1');
 
