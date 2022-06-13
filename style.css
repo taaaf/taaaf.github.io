@@ -52,6 +52,13 @@ h2 {
   white-space: nowrap;
 }
 
+.button-khelp{
+
+  background-color: white;
+  border-radius: 0.7em;
+  padding: 0em 0.4em;
+
+}
 
 .container1 {
   cursor: grab;
@@ -66,6 +73,8 @@ h2 {
   cursor: grab;
   overflow: auto;
 }
+
+
 
 .img-square {
   width: 7em;
@@ -409,6 +418,12 @@ df-messenger {
 
 .nav-item-guideline:hover a {
   color: #09A16E;
+}
+
+.scroll-vert{
+
+  max-height: calc(100vh - 10em);
+  overflow-y: auto;
 }
 
 .shadow-support-guideline {
