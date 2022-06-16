@@ -558,3 +558,14 @@ hr {
 .reveal3.active3 {
   transform: translateX(5em);
 }
+
+
+
+.italics{
+
+  font-family: 'IvyMode';
+  font-weight: semibold;
+    font-style: italic;
+    letter-spacing: 0.06em;
+
+}
