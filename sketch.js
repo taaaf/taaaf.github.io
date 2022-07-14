@@ -31,7 +31,7 @@ function draw() {
 
 	noStroke();
 
-	ambientMaterial(255,0,0);
+	ambientMaterial(0,255,0);
 	model(cube);
 
 	angle += 0.01;
