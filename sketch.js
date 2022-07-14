@@ -9,6 +9,7 @@ let model_num = 0;
 let size = 1;
 
 let a;
+let link_project = "uno.html";
 
 let swipe;
 let p_swipeX;
@@ -42,6 +43,8 @@ function setup() {
   }else {
     size=height/7;
   }
+
+createLink();
 
 }
 
@@ -121,13 +124,7 @@ function draw() {
 
 
 
-  if (model_num > 3) {
-    model_num = 0;
-  }
 
-  if (model_num < 0) {
-    model_num = 3;
-  }
 
   angle += 0.005;
 
@@ -136,9 +133,18 @@ function draw() {
     c_swipeX = p_swipeX - mouseX;
   }
 
-  a = createA('uno.html', '+');
-  a.position(width/2, height*0.8);
 
+
+
+
+
+}
+
+function createLink(){
+  a = createA(model_num+".html", '+');
+  a.position(windowWidth/2, height*0.8);
+  a.style("fontSize","5em");
+  a.style("color","yellow");
 }
 
 
@@ -163,6 +169,16 @@ function touchEnded() {
 	c_swipeX = 0;
 	p_swipeX = 0;
 
+  if (model_num > 3) {
+    model_num = 0;
+  }
+
+  if (model_num < 0) {
+    model_num = 3;
+  }
+
+  a.remove();
+  createLink()
 
 }
 
@@ -186,5 +202,16 @@ function mouseReleased() {
 
 	c_swipeX = 0;
 	p_swipeX = 0;
+
+  if (model_num > 3) {
+    model_num = 0;
+  }
+
+  if (model_num < 0) {
+    model_num = 3;
+  }
+
+  a.remove();
+  createLink()
 
 }
