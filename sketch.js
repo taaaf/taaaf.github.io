@@ -124,16 +124,17 @@ function touchMoved() {
 
 function touchEnded() {
 
-  swipe = false;
-  if (c_swipeX < 0 && abs(c_swipeX) > 100) {
+	swipe = false;
+  if (c_swipeX > 0 && abs(c_swipeX) > 50) {
     model_num++;
   }
-  if (c_swipeX > 0 && abs(c_swipeX) > 100) {
+  if (c_swipeX < 0 && abs(c_swipeX) > 50) {
     model_num--;
   }
 
 	c_swipeX = 0;
 	p_swipeX = 0;
+
 
 }
 
