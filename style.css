@@ -42,10 +42,8 @@ a:hover{
 
 .centerButton a{
 
-  color: black;
-  background-color: yellow;
-  padding: 0.6em 1.5em;
-
+  color: yellow;
+  font-size: 5em;
 
 }
 

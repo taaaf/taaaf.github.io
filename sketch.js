@@ -6,6 +6,7 @@ let obj3;
 let shrek;
 let angle = 0;
 let model_num = 0;
+let size = 1;
 
 let swipe;
 let p_swipeX;
@@ -13,6 +14,12 @@ let c_swipeX;
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight, WEBGL);
+  if(width>height){
+    size=width/7;
+  }else {
+    size=height/7;
+  }
+
 }
 
 
@@ -29,6 +36,12 @@ function setup() {
   obj3 = loadModel("obj/tre.obj");
   shrek = loadModel("obj/shrek.obj");
 
+  if(width>height){
+    size=width/7;
+  }else {
+    size=height/7;
+  }
+
 }
 
 function draw() {
@@ -44,7 +57,7 @@ function draw() {
     rotateZ(angle);
     rotateX(angle / 0.4);
     rotateY(angle / 2);
-    scale(140);
+    scale(size);
 
     noStroke();
 
@@ -61,7 +74,7 @@ function draw() {
     rotateZ(angle);
     rotateX(angle / 0.4);
     rotateY(angle / 2);
-    scale(140);
+    scale(size);
 
     noStroke();
 
@@ -78,7 +91,7 @@ function draw() {
     rotateZ(angle);
     rotateX(angle / 0.4);
     rotateY(angle / 2);
-    scale(140);
+    scale(size);
 
     noStroke();
 
@@ -95,7 +108,7 @@ function draw() {
     rotateZ(angle);
     rotateX(angle / 0.4);
     rotateY(angle / 2);
-    scale(140);
+    scale(size);
 
     noStroke();
 
