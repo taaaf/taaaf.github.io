@@ -10,7 +10,7 @@ function windowResized(){
 
 
 function setup() {
-	frameRate(30);
+	frameRate(60);
 	pixelDensity(1);
 
 	canvas = createCanvas(windowWidth, windowHeight, WEBGL);
