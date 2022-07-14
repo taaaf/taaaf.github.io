@@ -11,10 +11,11 @@ function windowResized(){
 
 function setup() {
 	frameRate(30);
+	pixelDensity(1);
+
 	canvas = createCanvas(windowWidth, windowHeight, WEBGL);
 	//canvas.position(windowWidth/2 - 200, windowHeight/2 -200);
 	canvas.style("z-index", "-1");
-	pixelDensity(1);
 
 	cube = loadModel("obj/cube.obj");
 }
