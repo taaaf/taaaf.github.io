@@ -1,14 +1,23 @@
+@font-face {
+  font-family:"Dico";
+  src: url("font/Dico.ttf") format("truetype");
+}
+
 html, body {
   height: 100%;
+  font-family: "Dico";
 }
+
 
 body {
   overflow: hidden; /* Hide scrollbars */
+
 }
 
 h1{
   color: white;
   font-size: 3em;
+
 }
 
 .center{
@@ -39,6 +48,17 @@ a:hover{
 .home{
     margin-left: 0.6em;
     margin-top: 0%;
+    display: inline-block;
+}
+
+.topLinkRow{
+  display: inline-block;
+}
+
+.topLink{
+    margin-left: 0em;
+    margin-top: 0%;
+    display: inline-block;
 }
 
 .white-big{

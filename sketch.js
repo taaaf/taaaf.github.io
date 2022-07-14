@@ -123,19 +123,12 @@ function draw() {
   }
 
 
-
-
-
   angle += 0.005;
 
 
 	if (swipe) {
     c_swipeX = p_swipeX - mouseX;
   }
-
-
-
-
 
 
 }
