@@ -35,6 +35,11 @@ a:hover{
   color: blue;
 }
 
+.home{
+    margin-left: 0.5%;
+    margin-top: 0%;
+}
+
 .centerButton a{
 
   color: black;

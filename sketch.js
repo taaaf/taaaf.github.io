@@ -1,8 +1,9 @@
 let canvas;
 
-let cube;
-let cone;
-let torus;
+let obj1;
+let obj2;
+let obj3;
+let shrek;
 let angle = 0;
 let model_num = 0;
 
@@ -23,9 +24,10 @@ function setup() {
   canvas.position(0, 0);
   canvas.style("z-index", "-100");
 
-  cube = loadModel("obj/cube.obj");
-  cone = loadModel("obj/cone.obj");
-  torus = loadModel("obj/torus.obj");
+  obj1 = loadModel("obj/uno.obj");
+  obj2 = loadModel("obj/due.obj");
+  obj3 = loadModel("obj/tre.obj");
+  shrek = loadModel("obj/shrek.obj");
 
 }
 
@@ -42,12 +44,12 @@ function draw() {
     rotateZ(angle);
     rotateX(angle / 0.4);
     rotateY(angle / 2);
-    scale(100);
+    scale(140);
 
     noStroke();
 
     ambientMaterial(0, 255, 0);
-    model(cube);
+    model(obj1);
     pop();
 
   }
@@ -59,12 +61,12 @@ function draw() {
     rotateZ(angle);
     rotateX(angle / 0.4);
     rotateY(angle / 2);
-    scale(100);
+    scale(140);
 
     noStroke();
 
     ambientMaterial(0, 255, 0);
-    model(cone);
+    model(obj2);
     pop();
 
   }
@@ -76,38 +78,49 @@ function draw() {
     rotateZ(angle);
     rotateX(angle / 0.4);
     rotateY(angle / 2);
-    scale(100);
+    scale(140);
 
     noStroke();
 
     ambientMaterial(0, 255, 0);
-    model(torus);
+    model(obj3);
+    pop();
+
+  }
+
+  if (model_num == 3) {
+
+    push();
+    rectMode(CENTER);
+    rotateZ(angle);
+    rotateX(angle / 0.4);
+    rotateY(angle / 2);
+    scale(140);
+
+    noStroke();
+
+    ambientMaterial(0, 255, 0);
+    model(shrek);
     pop();
 
   }
 
 
-  if (model_num >= 3) {
+
+  if (model_num > 3) {
     model_num = 0;
   }
 
   if (model_num < 0) {
-    model_num = 2;
+    model_num = 3;
   }
 
-  angle += 0.01;
+  angle += 0.005;
 
 
 	if (swipe) {
     c_swipeX = p_swipeX - mouseX;
   }
-
-
-
-  if (frameRate() < 50) {
-    background(255, 255, 0);
-  }
-
 
 
 
