@@ -141,10 +141,11 @@ function draw() {
 }
 
 function createLink(){
-  a = createA(model_num+".html", '+');
-  a.position(windowWidth/2, height*0.8);
+  a = createA(model_num+".html", "+");
+  a.position(windowWidth/2-32, height*0.8);
   a.style("fontSize","5em");
   a.style("color","yellow");
+  a.style("z-index","+20");
 }
 
 
@@ -161,9 +162,11 @@ function touchEnded() {
 	swipe = false;
   if (c_swipeX < 0 && abs(c_swipeX) > 50) {
     model_num++;
+    a.remove();
   }
   if (c_swipeX > 0 && abs(c_swipeX) > 50) {
     model_num--;
+    a.remove();
   }
 
 	c_swipeX = 0;
@@ -177,8 +180,7 @@ function touchEnded() {
     model_num = 3;
   }
 
-  a.remove();
-  createLink()
+  createLink();
 
 }
 
@@ -195,9 +197,11 @@ function mouseReleased() {
 	swipe = false;
   if (c_swipeX > 0 && abs(c_swipeX) > 100) {
     model_num++;
+      a.remove();
   }
   if (c_swipeX < 0 && abs(c_swipeX) > 100) {
     model_num--;
+      a.remove();
   }
 
 	c_swipeX = 0;
@@ -211,7 +215,7 @@ function mouseReleased() {
     model_num = 3;
   }
 
-  a.remove();
-  createLink()
+
+  createLink();
 
 }
