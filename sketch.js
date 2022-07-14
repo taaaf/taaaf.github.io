@@ -69,7 +69,7 @@ function draw() {
 
   }
 
-	if (model_num == 2) {
+  if (model_num == 2) {
 
     push();
     rectMode(CENTER);
@@ -91,24 +91,25 @@ function draw() {
     model_num = 0;
   }
 
-	if (model_num < 0) {
+  if (model_num < 0) {
     model_num = 2;
   }
 
   angle += 0.01;
 
 
+	if (swipe) {
+    c_swipeX = p_swipeX - mouseX;
+  }
+
+
+
   if (frameRate() < 50) {
     background(255, 255, 0);
   }
 
-if (swipe) {
-	c_swipeX = mouseX;
-}
 
-//console.log(p_swipeX + "  -  "+ c_swipeX);
 
-console.log(model_num);
 
 }
 
@@ -124,17 +125,20 @@ function touchMoved() {
 function touchEnded() {
 
   swipe = false;
-	if (c_swipeX>p_swipeX) {
-		model_num++;
-	}else {
-		model_num--;
-	}
+  if (c_swipeX > 0 && abs(c_swipeX) > 100) {
+    model_num++;
+  }
+  if (c_swipeX < 0 && abs(c_swipeX) > 100) {
+    model_num--;
+  }
+
+	c_swipeX = 0;
+	p_swipeX = 0;
 
 }
 
-function mousePressed(){
-p_swipeX = mouseX;
-
+function mousePressed() {
+  p_swipeX = mouseX;
 }
 
 function mouseDragged() {
@@ -143,10 +147,15 @@ function mouseDragged() {
 
 function mouseReleased() {
 
-	  swipe = false;
-		if (c_swipeX>p_swipeX) {
-			model_num++;
-		}else {
-			model_num--;
-		}
+	swipe = false;
+  if (c_swipeX > 0 && abs(c_swipeX) > 100) {
+    model_num++;
+  }
+  if (c_swipeX < 0 && abs(c_swipeX) > 100) {
+    model_num--;
+  }
+
+	c_swipeX = 0;
+	p_swipeX = 0;
+
 }
