@@ -8,6 +8,8 @@ let angle = 0;
 let model_num = 0;
 let size = 1;
 
+let a;
+
 let swipe;
 let p_swipeX;
 let c_swipeX;
@@ -19,12 +21,11 @@ function windowResized() {
   }else {
     size=height/7;
   }
-
 }
 
 
 function setup() {
-  frameRate(60);
+  frameRate(50);
   pixelDensity(1);
 
   canvas = createCanvas(windowWidth, windowHeight, WEBGL);
@@ -135,7 +136,8 @@ function draw() {
     c_swipeX = p_swipeX - mouseX;
   }
 
-
+  a = createA('uno.html', '+');
+  a.position(width/2, height*0.8);
 
 }
 
