@@ -3,13 +3,16 @@ let angle=0;
 let canvas;
 
 function windowResized(){
-	resizeCanvas(windowWidth, windowHeight, WEBGL);
+//	resizeCanvas(windowWidth, windowHeight, WEBGL);
+	canvas.position(windowWidth/2 - 200, windowHeight/2 -200);
+
 }
 
 
 function setup() {
 	frameRate(30);
-	canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+	canvas = createCanvas(400, 400, WEBGL);
+	canvas.position(windowWidth/2 - 200, windowHeight/2 -200);
 	canvas.style("z-index", "-1");
 
 	cube = loadModel("obj/cube.obj");
