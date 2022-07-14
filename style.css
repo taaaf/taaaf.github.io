@@ -9,3 +9,43 @@ body {
 h1{
   color: white;
 }
+
+.center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centerButton{
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translate(-50%, -50%);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+a:hover{
+  text-decoration: none;
+  color: blue;
+}
+
+.centerButton a{
+
+  color: black;
+  background-color: yellow;
+  padding: 0.6em 1.5em;
+
+
+}
+
+.white-big{
+  font-size: 1.5em;
+  color: white;
+
+}
