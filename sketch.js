@@ -8,6 +8,7 @@ function windowResized(){
 
 
 function setup() {
+	frameRate(30);
 	canvas = createCanvas(windowWidth, windowHeight, WEBGL);
 	canvas.style("z-index", "-1");
 
@@ -30,6 +31,6 @@ function draw() {
 	ambientMaterial(255,0,0);
 	model(cube);
 
-	angle += 0.005;
+	angle += 0.01;
 
 }
