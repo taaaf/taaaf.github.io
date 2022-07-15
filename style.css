@@ -3,20 +3,33 @@
   src: url("font/Dico.ttf") format("truetype");
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 html, body {
   height: 100%;
   font-family: "Dico";
 }
 
+.black{
+  background-color: black;
+}
 
-body {
+
+.noscroll{
   overflow: hidden; /* Hide scrollbars */
-
 }
 
 h1{
   color: white;
-  font-size: 3em;
+  font-size: 2.5em;
 
 }
 
@@ -64,5 +77,10 @@ a:hover{
 .white-big{
   font-size: 1.5em;
   color: white;
+}
 
+.embed-responsive-item{
+  min-width: 400px;
+  min-height: 300px;
+  width: 100%;
 }

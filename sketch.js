@@ -135,10 +135,14 @@ function draw() {
 
 function createLink(){
   a = createA(model_num+".html", "+");
-  a.position(windowWidth/2-32, height*0.8);
+  //a.position(width*0.5, height*0.9);
   a.style("fontSize","5em");
   a.style("color","yellow");
   a.style("z-index","+20");
+  a.style("position", "absolute");
+  a.style("left", "50%");
+  a.style("top", "80%");
+  a.style("transform", "translate(-50%, -50%)");
 }
 
 
